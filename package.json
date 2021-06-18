@@ -1,0 +1,11 @@
+{
+  "name": "encapsule-project",
+  "version": "0.0.1",
+  "description": "Encapsule Project web application for deployment on Digital Ocean App Platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Initial package.json author",
+  "license": "AGPL-3.0-or-later"
+}
