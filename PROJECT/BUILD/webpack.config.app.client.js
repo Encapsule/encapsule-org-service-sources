@@ -1,5 +1,5 @@
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.1.05 "phoenix" FizFuN7ZTIqidY1Gt6pnNA 7f9ccadf0580665e58dfcc3da921640320f2eb3c
+// Encapsule holistic v0.1.05 "phoenix" PXELWB0pQUuMYhqlMTY9_Q 979b4127c1566b605693323cabc306633e498836
 //
 // webpack.config.app.client.js
 //

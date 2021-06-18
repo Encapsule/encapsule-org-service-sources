@@ -1,7 +1,7 @@
 {
-  "appgen": "@encapsule/holistic v0.1.05 phoenix FizFuN7ZTIqidY1Gt6pnNA 7f9ccadf0580665e58dfcc3da921640320f2eb3c 2021-06-16T15:31:36.000Z",
-  "author": "Initial package.json author",
-  "codename": "HelloWorld!",
+  "appgen": "@encapsule/holistic v0.1.05 phoenix PXELWB0pQUuMYhqlMTY9_Q 979b4127c1566b605693323cabc306633e498836 2021-06-18T15:45:05.000Z",
+  "author": "Encapsule",
+  "codename": "setup-1",
   "description": "Encapsule Project web application for deployment on Digital Ocean App Platform.",
   "devDependencies": {
     "@babel/cli": "7.10.5",
