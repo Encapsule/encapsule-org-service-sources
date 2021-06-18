@@ -1,0 +1,15 @@
+{
+  "author": "Initial package.json author",
+  "name": "encapsule-project",
+  "description": "Encapsule Project web application for deployment on Digital Ocean App Platform.",
+  "version": "0.0.1",
+  "codename": "HelloWorld!",
+  "dependencies": {
+    "common": {},
+    "buildtime": {},
+    "runtime": {}
+  },
+  "scripts": {
+    "buildtime": {}
+  }
+}

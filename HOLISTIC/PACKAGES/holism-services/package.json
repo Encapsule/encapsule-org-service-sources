@@ -1,0 +1,46 @@
+{
+    "author": "Encapsule",
+    "bugs": {
+        "url": "https://github.com/Encapsule/holistic/issues"
+    },
+    "buildID": "FizFuN7ZTIqidY1Gt6pnNA",
+    "buildSource": "7f9ccadf0580665e58dfcc3da921640320f2eb3c",
+    "buildTime": 1623857496,
+    "codename": "phoenix",
+    "contributors": [
+        {
+            "name": "Christopher D. Russell",
+            "email": "cdr@encapsule.io",
+            "url": "https://github.com/ChrisRus"
+        }
+    ],
+    "description": "This package contains re-usable service filter plug-ins for use with the @encapsule/holism app server package.",
+    "engines": {
+        "node": "14.16.1",
+        "npm": ">=6.14.12"
+    },
+    "homepage": "https://github.com/Encapsule",
+    "keywords": [
+        "Encapsule",
+        "holistic",
+        "holism",
+        "holism-services",
+        "service",
+        "service filter",
+        "plug-in",
+        "HTTP",
+        "REST"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@encapsule/holism-services",
+    "peerDependencies": {
+        "@encapsule/arccore": "0.1.11",
+        "@encapsule/holism": "0.1.05"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Encapsule/holistic.git"
+    },
+    "version": "0.1.05"
+}

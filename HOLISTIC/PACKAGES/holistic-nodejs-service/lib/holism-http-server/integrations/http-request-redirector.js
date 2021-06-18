@@ -1,0 +1,26 @@
+"use strict";
+
+// @viewpath/viewpath5/SOURCES/SERVER/holism/integrations/http-request-redirector.js
+module.exports = function (request_) {
+  console.log("..... " + this.operationID + "::" + this.operationName);
+  var headers = request_.request_descriptor.headers; // Interesting -- we may not need this on ElasticBeanstalk?
+
+  return {
+    error: null
+  }; // no redirection
+
+  /*
+  if (!headers["x-forwarded-proto"] || (headers["x-forwarded-proto"] === "https")) {
+      return { error: null }; // no redirection
+  }
+  const locationURL = `https://${headers.host}${request_.request_descriptor.url_parse.href}`;
+  console.log(`..... redirecting to '${locationURL}'...`);
+  return ({
+      error: null,
+      result: {
+          locationURL: locationURL,
+          httpCode: 308 // Moved permanently
+      }
+  });
+  */
+};
