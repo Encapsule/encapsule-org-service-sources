@@ -96,7 +96,24 @@
         contentEncoding: "utf8",
         contentType: "application/json"
       }
-    } // Disabling the GET:/login HTML5 resource route. For now, it seems fine to use GET:/login-oauth2 route directly.
+    },
+
+
+        {
+            authentication: { required: false },
+            filter: require("../services/get-json-storage-status"),
+            request_bindings: {
+                method: "GET",
+                uris: [ "/storage" ]
+            },
+            response_properties: {
+                contentEncoding: "utf8",
+                contentType: "application/json"
+            }
+        },
+
+
+        // Disabling the GET:/login HTML5 resource route. For now, it seems fine to use GET:/login-oauth2 route directly.
     // Later, we may elect to resurrect this route if/when we need to add custom UX to support additional authentication
     // workflows.
 

@@ -1,5 +1,5 @@
 # THIS FILE IS CODE-GENERATED
-# Encapsule holistic v0.1.05 "phoenix" t7SpWqUwTLytCS2kJzV7aQ b0feffd764521ea465f7e9f203b3786cd28e80af
+# Encapsule holistic v0.1.05 "phoenix" HedsjSNAQqKZLbejVGDmDQ b0feffd764521ea465f7e9f203b3786cd28e80af
 # See: https://github.com/Encapsule/holistic/README.md
 
 # https://www.gnu.org/software/make/manual/make.html
@@ -27,7 +27,7 @@ TOOL_GEN_APP_RUNTIME_PACKAGE=$(DIR_PROJECT_BUILD)/generate-runtime-package-manif
 TOOL_ESLINT=$(DIR_TOOLBIN)/eslint
 TOOL_BABEL=$(DIR_TOOLBIN)/babel
 TOOL_WEBPACK=$(DIR_TOOLBIN)/webpack-cli
-TOOL_WEBPACK_FLAGS=--display-modules --verbose --debug --progress --colors --devtool source-map --output-pathinfo
+TOOL_WEBPACK_FLAGS=--progress --color --devtool source-map --output-pathinfo
 TOOL_COPY_HOLARCHY_RESOURCES=$(DIR_TOOLBIN)/copy_resources
 
 DIR_SOURCES=$(DIR_ROOT)/SOURCES
