@@ -1,5 +1,5 @@
 {
-  "appgen": "@encapsule/holistic v0.1.05 phoenix HedsjSNAQqKZLbejVGDmDQ b0feffd764521ea465f7e9f203b3786cd28e80af 2021-06-21T15:44:10.000Z",
+  "appgen": "@encapsule/holistic v0.1.06 phoenix06 l3y2VyGXQSKB6jFVaXazQQ 0bd8f660463c2cb6acc9edd459e6d4bd031d7323 2021-06-21T15:49:02.000Z",
   "author": "Encapsule",
   "codename": "setup-1",
   "description": "Encapsule Project web application for deployment on Digital Ocean App Platform.",
@@ -64,5 +64,5 @@
     "server": "npm run build && yarn start",
     "start": "node ./BUILD/runtime-phase3/SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
