@@ -4,6 +4,9 @@
 var arccore = require("@encapsule/arccore");
 
 var factoryResponse = arccore.discriminator.create({
+  id: "cOiQs5l_T464i6WKfp76zA",
+  name: "Holodeck Test Harness Discriminator",
+  description: "TODO",
   options: {
     action: "getFilter"
   },

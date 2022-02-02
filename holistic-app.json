@@ -1,15 +1,17 @@
 {
-  "author": "Encapsule",
-  "name": "encapsule-project",
-  "description": "Encapsule Project web application for deployment on Digital Ocean App Platform.",
-  "version": "0.0.2",
-  "codename": "setup-1",
-  "dependencies": {
-    "common": {},
-    "buildtime": {},
-    "runtime": {}
-  },
-  "scripts": {
-    "buildtime": {}
-  }
+    "author": "Encapsule",
+    "name": "encapsule-project",
+    "description": "Encapsule.io web application based on @encapsule/holistic app platform latest for deployment on Digital Ocean.",
+    "version": "0.0.3",
+    "codename": "Simple test application.",
+    "dependencies": {
+        "common": {
+            "got": "11.8.2"
+        },
+        "buildtime": {},
+        "runtime": {}
+    },
+    "scripts": {
+        "buildtime": {}
+    }
 }

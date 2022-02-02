@@ -1,5 +1,6 @@
 {
-  "@encapsule/arccore": "0.1.11",
+  "got": "11.8.2",
+  "@encapsule/arccore": "0.3.5",
   "@encapsule/d2r2": "file:./HOLISTIC/PACKAGES/d2r2",
   "@encapsule/d2r2-components": "file:./HOLISTIC/PACKAGES/d2r2-components",
   "@encapsule/holarchy": "file:./HOLISTIC/PACKAGES/holarchy",

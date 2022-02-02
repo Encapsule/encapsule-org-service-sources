@@ -1,5 +1,5 @@
 # THIS FILE IS CODE-GENERATED
-# Encapsule holistic v0.1.06 "phoenix06" l3y2VyGXQSKB6jFVaXazQQ 0bd8f660463c2cb6acc9edd459e6d4bd031d7323
+# Encapsule holistic v0.2.9 "firestorm" T3fTnta3T4OVYQ0yfW-ilw 5a37946fd745a5eaf6de80fed332cd5112fb1e6f
 # See: https://github.com/Encapsule/holistic/README.md
 
 # https://www.gnu.org/software/make/manual/make.html
@@ -36,7 +36,6 @@ DIR_SOURCES_CLIENT=$(DIR_SOURCES)/CLIENT
 DIR_SOURCES_COMMON=$(DIR_SOURCES)/COMMON
 DIR_SOURCES_SERVER=$(DIR_SOURCES)/SERVER
 DIR_SOURCES_DEPLOY=$(DIR_SOURCES)/DEPLOY
-DIR_SOURCES_DEPLOY_AWS_EB=$(DIR_SOURCES_DEPLOY)/aws-elastic-beanstalk
 
 DIR_BUILD=$(DIR_ROOT)/BUILD
 DIR_BUILD_PHASE1=$(DIR_BUILD)/transpile-phase1
@@ -92,27 +91,26 @@ reset: scrub
 # Holistic app service runtime image package build targets.
 
 # Create/rebuild a development version of the holistic app service from ./SOURCES/*
-.PHONY: appServiceRuntime
-appServiceRuntime: appServiceRuntimePrebuild holisticServiceRuntime appServiceRuntimePostbuild
-	@echo Your derived app service has been rebuilt from generic library + your unique specializations ...
-	@echo ... producing an updated app service runtime image package written to the ./BUILD/runtime-phase3 directory.
-	@echo Execute:
-	@echo - \'npm start\' to activate your derived app\'s Node.js service using your localhost build environment\'s currently-installed npm dependency set.
-	@echo - \'cd BUILD/runtime-phase3 \&\& npm install \&\& npm start\' to perform a localhost test of your app\'s runtime image package for pre-deployment test.
+.PHONY: application
+application: _applicationPrebuild _applicationService _applicationPostbuild
+	@echo Your derived app service has been rebuilt from generic library + your unique specializations.
+	@echo The output of this rebuild has been written into the ./BUILD/runtime-phase3 directory.
+	@echo ---
+
 
 # Makefile-App service-specific runtime image package prebuild extension:
-.PHONY: appServiceRuntimePrebuild
-appServiceRuntimePrebuild: configure
-	-make --makefile=Makefile-App appServiceRuntimePrebuild
+.PHONY: _applicationPrebuild
+_applicationPrebuild: configure
+	-make --makefile=Makefile-App applicationPrebuild
 
 # Makefile-App service-specific runtime image package postbuild extension:
-.PHONY: appServiceRuntimePostbuild
-appServiceRuntimePostbuild:
-	-make --makefile=Makefile-App appServiceRuntimePostbuild
+.PHONY: _applicationPostbuild
+_applicationPostbuild:
+	-make --makefile=Makefile-App applicationPostbuild
 
 # Service-agnostic runtime image package build target:
-.PHONY: holisticServiceRuntime
-holisticServiceRuntime:
+.PHONY: _applicationService
+_applicationService:
 
 #	PHASE0 - create a copy of the SOURCES directory structure.
 	@echo ================================================================
@@ -193,13 +191,13 @@ holisticServiceRuntime:
 # ================================================================
 # ================================================================
 # ================================================================
-# Holistic app service deployment package build targets.
+# Holistic app service distribution package build targets.
 
-.PHONY: appServiceDeployment
-appServiceDeployment:
+.PHONY: distribution
+distribution:
 
 	@echo App service distribution package build start...
 	mkdir -p $(DIR_DIST_APP_SERVICE)
 	cp -r $(DIR_BUILD_PHASE3)/. $(DIR_DIST_APP_SERVICE)/
-	cp -r $(DIR_SOURCES_DEPLOY_AWS_EB)/. $(DIR_DIST_APP_SERVICE)/
+	cp -r $(DIR_SOURCES_DEPLOY)/. $(DIR_DIST_APP_SERVICE)/
 

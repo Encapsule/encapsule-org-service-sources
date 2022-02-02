@@ -57,6 +57,9 @@ var factoryResponse = arccore.filter.create({
       console.log("> Initializing test harness dispatcher...");
 
       var _factoryResponse = arccore.discriminator.create({
+        id: "Zbcs9U3AT7OOM7svjMG-ew",
+        name: "Holodeck Test Runner Discriminator",
+        description: "Routes a test request to an appropriate holodeck test harness plug-in for evalaution.",
         options: {
           action: "getFilter"
         },

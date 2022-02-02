@@ -1,17 +1,17 @@
 # THIS FILE IS CODE-GENERATED (ONCE - on first `appgen`)
-# Encapsule holistic v0.1.05 "phoenix" 2oigQp1uRSua5k3c81xjzg 979b4127c1566b605693323cabc306633e498836
+# Encapsule holistic v0.2.3 "firestorm" 6PTykH8wTgyqugzp9sApdA e5f49d712bbd00bf82f109f49008be6a28840905
 # See: https://github.com/Encapsule/holistic/README.md
 
 .PHONY: default
 default:
 	@echo Makefile-App is called automatically by the top-level appgen-generated Makefile to perfrom applicationPreBuild, and  applicationPostBuild actions.
 
-.PHONY: appServiceRuntimePrebuild
-appServiceRuntimePrebuild:
+.PHONY: applicationPrebuild
+applicationPrebuild:
 	# keep for reference: ./PROJECT/BUILD/vp5/generate-untrusted-client-user-login-session-spec.js
 
-.PHONY: appServiceRuntimePostbuild
-appServiceRuntimePostbuild:
+.PHONY: applicationPostbuild
+applicationPostbuild:
 	# keep for reference: ./PROJECT/BUILD/vp5/generate-viewpath5-repo-README.js
 
 # These are merely ideas at this stage - these are not called from the main appgen-created Makefile

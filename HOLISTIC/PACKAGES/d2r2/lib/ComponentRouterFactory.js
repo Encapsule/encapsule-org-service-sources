@@ -64,6 +64,9 @@ var factoryResponse = arccore.filter.create({
 
 
       var innerFactoryResponse = arccore.discriminator.create({
+        id: "darBJdtyS7y5BnckiqN3eg",
+        name: "Data-Driven React Render (d2r2) Discriminator",
+        description: "Routes d2r2 render requests to an appropriate d2r2-extended React component for server or client side DOM rendering.",
         options: {
           action: "getFilter"
         },

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.1.06-phoenix06 l3y2VyGXQSKB6jFVaXazQQ 0bd8f660463c2cb6acc9edd459e6d4bd031d7323
+// Encapsule holistic v0.2.9-firestorm T3fTnta3T4OVYQ0yfW-ilw 5a37946fd745a5eaf6de80fed332cd5112fb1e6f
 //
 
 (function() {
@@ -23,7 +23,7 @@
     program
         .name("generate-runtime-package-manifest")
         .description("Generate runtime package manifest (package.json) from application build manifest (app-build.json).")
-        .version("0.1.06")
+        .version("0.2.9")
         .option('--appBuildManifest <manifestPath>', 'Use <manifestPath> to select the location of the input app-build.json.')
         .parse(process.argv);
 

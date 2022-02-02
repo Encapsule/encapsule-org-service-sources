@@ -45,6 +45,9 @@ var factoryResponse = arccore.filter.create({
             }
 
             let innerFactoryResponse = arccore.discriminator.create({
+                id: "Hu9_XEAeTWO-CiDhgiqEPA",
+                name: "Holistic Node.js Service Data Gateway Discriminator",
+                description: "Used to route incoming GET/POST requests to appropriate backend handler for processing.",
                 filters: routingFilters,
                 options: { action: "getFilterID" }
             });

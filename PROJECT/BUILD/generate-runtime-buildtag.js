@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.1.06 "phoenix06" l3y2VyGXQSKB6jFVaXazQQ 0bd8f660463c2cb6acc9edd459e6d4bd031d7323
+// Encapsule holistic v0.2.9 "firestorm" T3fTnta3T4OVYQ0yfW-ilw 5a37946fd745a5eaf6de80fed332cd5112fb1e6f
 //
 
 const arccore = require("@encapsule/arccore");
@@ -80,7 +80,7 @@ console.log(JSON.stringify({
             // copyright: { holder: arccoreCopyrightHolder, year: arccoreBuildYear},
             license: arccoreLicense,
             buildID: arccore.__meta.buildID,
-            buildSource: arccore.__meta.ARC_master,
+            buildSource: arccore.__meta.buildSource,
             buildTime: arccore.__meta.buildTime,
             buildDateISO: arccoreBuildISO
         },

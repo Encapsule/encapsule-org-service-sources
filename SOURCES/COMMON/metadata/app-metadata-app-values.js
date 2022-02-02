@@ -4,7 +4,7 @@
 var appBuildManifest = require("../../app-build");
 
 module.exports = {
-    name: "Encapsule Project",
-    description: "Welcome to Encapsule Project - a long-running effort to write software that sucks less.",
-    build: appBuildManifest
+  name: appBuildManifest.app.name,
+  description: appBuildManifest.app.description,
+  build: appBuildManifest
 };
