@@ -3,7 +3,7 @@
   "name": "encapsule-project",
   "description": "Encapsule.io web application based on @encapsule/holistic app platform latest for deployment on Digital Ocean.",
   "version": "0.0.4",
-  "codename": "Simple test application.",
+  "codename": "rockslide",
   "dependencies": {
     "common": {
       "got": "11.8.2"
