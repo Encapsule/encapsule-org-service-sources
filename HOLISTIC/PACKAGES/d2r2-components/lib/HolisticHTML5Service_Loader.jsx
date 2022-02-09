@@ -78,18 +78,18 @@ var factoryResponse = d2r2.ComponentFactory.request({
           var key = 0;
           var content = [];
           var flexContent = [];
-          var statusMessage = this.props.renderContext.serverRender ? "L O A D I N G" : !messageBody.appStarted ? "S T A R T I N G" : "W E L C O M E !";
+          var statusMessage = this.props.renderContext.serverRender ? "L O A D I N G" : !messageBody.appStarted ? "S T A R T I N G" : "W E L C O M E";
           var backgroundColor = {
             development: "#CCCCCC",
-            test: "#FFCC00",
-            staging: "#00FF99",
-            production: "#0099FF"
+            test: "#FFCC99",
+            staging: "#99FFCC",
+            production: "#99CCFF"
           }[messageBody.deploymentEnvironment];
           var textColorMain = color(backgroundColor).darken(0.1).hex();
           var textColorMessage = "white";
           var textColorEnvironment = color(backgroundColor).darken(0.03).hex();
-          var textColorVersion = color(backgroundColor).darken(-0.2).hex();
-          var textColorVersionShadow = color(backgroundColor).darken(0.4).hex();
+          var textColorVersion = color(backgroundColor).lighten(0.15).hex();
+          var textColorVersionShadow = color(backgroundColor).darken(0.15).hex();
           flexContent.push( /*#__PURE__*/React.createElement("div", {
             key: makeKey(),
             style: {
@@ -100,6 +100,16 @@ var factoryResponse = d2r2.ComponentFactory.request({
               paddingBottom: "1.3vw"
             }
           }, messageBody.appBuild.app.name));
+          flexContent.push( /*#__PURE__*/React.createElement("div", {
+            key: makeKey(),
+            style: {
+              fontFamily: "Nunito",
+              fontSize: "3vw",
+              fontWeight: "bold",
+              color: textColorMessage,
+              textShadow: "0px 0px 0.5vw ".concat(color(backgroundColor).darken(0.25).hex())
+            }
+          }, statusMessage));
 
           if (this.props.renderContext.serverRender) {
             flexContent.push( /*#__PURE__*/React.createElement("div", {
@@ -132,18 +142,8 @@ var factoryResponse = d2r2.ComponentFactory.request({
                 className: "spinner-triple"
               })))));
             }
-          }
+          } // Environment
 
-          flexContent.push( /*#__PURE__*/React.createElement("div", {
-            key: makeKey(),
-            style: {
-              fontFamily: "Nunito",
-              fontSize: "3vw",
-              fontWeight: "bold",
-              color: textColorMessage,
-              textShadow: "0px 0px 0.5vw ".concat(color(backgroundColor).darken(0.25).hex())
-            }
-          }, statusMessage)); // Environment
 
           content.push( /*#__PURE__*/React.createElement("div", {
             key: makeKey(),
@@ -207,17 +207,12 @@ var factoryResponse = d2r2.ComponentFactory.request({
           }, /*#__PURE__*/React.createElement("div", {
             style: {
               fontFamily: "Play",
-              fontSize: "2.75vw",
+              fontSize: "1.25vw",
               color: textColorVersion,
               padding: "1vw",
-              textShadow: "-1px -1px 2px ".concat(textColorVersionShadow)
+              textShadow: "-1px -1px 1px rgba(0,0,0,0.5)"
             }
-          }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.app.author, "/", messageBody.appBuild.app.name, " v", messageBody.appBuild.app.version, "-", messageBody.appBuild.app.codename), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
-            style: {
-              fontSize: "1.5vw",
-              fontWeight: "bold"
-            }
-          }, messageBody.appBuild.app.buildID, " .::. ", messageBody.appBuild.app.buildSource), /*#__PURE__*/React.createElement("br", null))))); // Platform version
+          }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.app.author, "/", messageBody.appBuild.app.name, " v", messageBody.appBuild.app.version, "-", messageBody.appBuild.app.codename), ' // ', messageBody.appBuild.app.buildID, ' // ', messageBody.appBuild.app.buildSource, /*#__PURE__*/React.createElement("br", null))))); // Platform version
 
           content.push( /*#__PURE__*/React.createElement("div", {
             key: makeKey(),
@@ -239,17 +234,12 @@ var factoryResponse = d2r2.ComponentFactory.request({
           }, /*#__PURE__*/React.createElement("div", {
             style: {
               fontFamily: "Play",
-              fontSize: "2.75vw",
+              fontSize: "1.25vw",
               color: textColorVersion,
               padding: "1vw",
-              textShadow: "-1px -1px 2px ".concat(textColorVersionShadow)
+              textShadow: "-1px -1px 1px rgba(0,0,0,0.5)"
             }
-          }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.platform.app.author, "/", messageBody.appBuild.platform.app.name, " v", messageBody.appBuild.platform.app.version, "-", messageBody.appBuild.platform.app.codename), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
-            style: {
-              fontSize: "1.5vw",
-              fontWeight: "bold"
-            }
-          }, messageBody.appBuild.platform.app.buildID, " .::. ", messageBody.appBuild.platform.app.buildSource), /*#__PURE__*/React.createElement("br", null)))));
+          }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.platform.app.author, "/", messageBody.appBuild.platform.app.name, " v", messageBody.appBuild.platform.app.version, "-", messageBody.appBuild.platform.app.codename), ' // ', messageBody.appBuild.platform.app.buildID, ' // ', messageBody.appBuild.platform.app.buildSource, /*#__PURE__*/React.createElement("br", null)))));
           return /*#__PURE__*/React.createElement("div", {
             key: makeKey()
           }, content); // ================================================================

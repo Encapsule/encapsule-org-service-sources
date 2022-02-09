@@ -1,7 +1,7 @@
 {
-  "appgen": "@encapsule/holistic v0.3.0 snowpack lTu9k1Q6SUCSJxiovS3bfA 5a37946fd745a5eaf6de80fed332cd5112fb1e6f 2022-02-04T03:10:40.000Z",
+  "appgen": "@encapsule/holistic v0.3.1 snowpack tYozWw5BRzSa3OdTdEng9g 3eafb6ba173e9fd6c41a267d87603d269b70ca48 2022-02-09T16:42:33.000Z",
   "author": "Encapsule",
-  "codename": "rockslide",
+  "codename": "setup2",
   "description": "Encapsule.io web application based on @encapsule/holistic app platform latest for deployment on Digital Ocean.",
   "devDependencies": {
     "@babel/cli": "7.14.5",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.4"
+  "version": "0.0.5"
 }

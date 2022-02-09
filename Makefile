@@ -1,5 +1,5 @@
 # THIS FILE IS CODE-GENERATED
-# Encapsule holistic v0.3.0 "snowpack" lTu9k1Q6SUCSJxiovS3bfA 5a37946fd745a5eaf6de80fed332cd5112fb1e6f
+# Encapsule holistic v0.3.1 "snowpack" tYozWw5BRzSa3OdTdEng9g 3eafb6ba173e9fd6c41a267d87603d269b70ca48
 # See: https://github.com/Encapsule/holistic/README.md
 
 # https://www.gnu.org/software/make/manual/make.html
