@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.3.1-snowpack vkcKilw4QAKdxkKcouGCrA 9d44c4960bdd7e758f870e30499671719a6f4b67
+// Encapsule holistic v0.3.1-snowpack m6LSoCYBS3a8OStA-NSC2w 9d44c4960bdd7e758f870e30499671719a6f4b67
 //
 
 (function() {

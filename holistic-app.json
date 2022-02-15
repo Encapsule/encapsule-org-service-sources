@@ -1,17 +1,17 @@
 {
-  "author": "Encapsule",
-  "name": "encapsule-project",
-  "description": "Encapsule.io web application based on @encapsule/holistic app platform latest for deployment on Digital Ocean.",
-  "version": "0.0.5",
-  "codename": "setup2",
-  "dependencies": {
-    "common": {
-      "got": "11.8.2"
+    "author": "Encapsule",
+    "name": "encapsule-project",
+    "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
+    "version": "0.0.7",
+    "codename": "setup7",
+    "dependencies": {
+        "common": {
+            "got": "11.8.2"
+        },
+        "buildtime": {},
+        "runtime": {}
     },
-    "buildtime": {},
-    "runtime": {}
-  },
-  "scripts": {
-    "buildtime": {}
-  }
+    "scripts": {
+        "buildtime": {}
+    }
 }
