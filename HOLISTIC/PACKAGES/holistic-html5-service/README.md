@@ -11,9 +11,9 @@ _Encapsule Project is a quest to define a universal protocol for domain-specific
 # ![](ASSETS/encapsule-holistic-32x32.png)&nbsp;@encapsule/holistic-html5-service
 
 ```
-Package: @encapsule/holistic-html5-service v0.3.3-snowpack build ID "52m3Os67SkmM1vL9uzaFKQ"
-Sources: @encapsule/holodev#7e54d32437759b6c073a2442de6693c481cc0d03
-Created: 2022-02-16T20:39:32.000Z // License: MIT
+Package: @encapsule/holistic-html5-service v0.3.3-snowpack build ID "6XoaGnEQQXSxrlm229GY9Q"
+Sources: @encapsule/holodev#3482c00e90451aad09732668d0833e152b6e378c
+Created: 2022-02-17T16:23:50.000Z // License: MIT
 Purpose: library // Environment: Browser/HTML5
 ```
 

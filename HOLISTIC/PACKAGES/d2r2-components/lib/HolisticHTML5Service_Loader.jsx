@@ -89,7 +89,7 @@ var factoryResponse = d2r2.ComponentFactory.request({
           var textColorMessage = "white";
           var textColorEnvironment = color(backgroundColor).darken(0.03).hex();
           var textColorVersion = color(backgroundColor).darken(0.05).hex();
-          var textColorVersionShadow = color(backgroundColor).darken(0.2).hex(); // Application name...
+          var textColorVersionShadow = color(backgroundColor).darken(0.25).hex(); // Application name...
 
           flexContent.push( /*#__PURE__*/React.createElement("div", {
             key: makeKey(),
@@ -212,7 +212,7 @@ var factoryResponse = d2r2.ComponentFactory.request({
               fontSize: "1.25vw",
               color: textColorVersion,
               padding: "1vw",
-              textShadow: "-2px -2px 4px ".concat(textColorVersionShadow)
+              textShadow: "-1px -1px 1px ".concat(textColorVersionShadow)
             }
           }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.app.author, "/", messageBody.appBuild.app.name, " v", messageBody.appBuild.app.version, "-", messageBody.appBuild.app.codename), "\xA0\u2BCE\xA0", messageBody.appBuild.app.buildID, "\xA0\u2BCF\xA0", messageBody.appBuild.app.buildSource, /*#__PURE__*/React.createElement("br", null))))); // Platform version
 
@@ -240,7 +240,7 @@ var factoryResponse = d2r2.ComponentFactory.request({
               fontSize: "1.25vw",
               color: textColorVersion,
               padding: "1vw",
-              textShadow: "-2px -2px 4px ".concat(textColorVersionShadow)
+              textShadow: "-1px -1px 1px ".concat(textColorVersionShadow)
             }
           }, /*#__PURE__*/React.createElement("strong", null, "@", messageBody.appBuild.platform.app.author, "/", messageBody.appBuild.platform.app.name, " v", messageBody.appBuild.platform.app.version, "-", messageBody.appBuild.platform.app.codename), "\xA0\u2BCE\xA0", messageBody.appBuild.platform.app.buildID, "\xA0\u2BCF\xA0", messageBody.appBuild.platform.app.buildSource, /*#__PURE__*/React.createElement("br", null)))));
           return /*#__PURE__*/React.createElement("div", {
