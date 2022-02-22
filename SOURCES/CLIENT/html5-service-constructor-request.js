@@ -10,6 +10,8 @@
     // const ViewpathPageContent = require("./view/ViewpathPageContent");
     // const DataGatewaySpecializations = require("./storage/backend");
 
+    const EncapsuleProjectPage = require("./view/EncapsuleProjectPage");
+
     module.exports = {
 
         appServiceCore,
@@ -20,6 +22,9 @@
 
             cellModels: [
                 // Register CellModel references defined in SOURCES/CLIENT here.
+
+                EncapsuleProjectPage.CellModel
+
 
                 /*
                 ViewpathPage.CellModel,
@@ -40,6 +45,8 @@
             display: {
                 d2r2Components: [
                     // Register d2r2 components defined in SOURCES/CLIENT/display/* here. (But, don't actually - see ./display/README.md)
+
+                    EncapsuleProjectPage.d2r2Component
 
                     /*
                     ViewpathPage.d2r2Component,
