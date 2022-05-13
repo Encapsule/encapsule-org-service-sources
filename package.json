@@ -1,15 +1,15 @@
 {
-  "appgen": "@encapsule/holistic v0.3.4 snowpack -1dnunoEQ8aUgOdFVoKGeQ a7a18705bd1f078c58c612c98d87f003e965b4ff 2022-02-17T21:59:13.000Z",
+  "appgen": "@encapsule/holistic v0.3.5 snowmelt q5C8_UzLS4WT2TVWrNsd7Q 3dc5903a7448efde3cec0a50edad661456993836 2022-05-13T16:30:44.000Z",
   "author": "Encapsule",
-  "codename": "setup10",
+  "codename": "setup14",
   "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
   "devDependencies": {
     "@babel/cli": "7.14.5",
     "@babel/core": "7.14.6",
     "@babel/plugin-transform-react-jsx": "7.14.5",
     "@babel/preset-env": "7.14.5",
-    "@encapsule/arccore": "0.3.5",
-    "@encapsule/arctools": "0.3.5",
+    "@encapsule/arccore": "0.3.6",
+    "@encapsule/arctools": "0.3.6",
     "@encapsule/d2r2": "file:./HOLISTIC/PACKAGES/d2r2",
     "@encapsule/d2r2-components": "file:./HOLISTIC/PACKAGES/d2r2-components",
     "@encapsule/holarchy": "file:./HOLISTIC/PACKAGES/holarchy",
@@ -49,8 +49,8 @@
     "stream-browserify": "^3.0.0",
     "style-loader": "1.2.1",
     "url": "^0.11.0",
-    "webpack": "5.39.1",
-    "webpack-cli": "4.7.1"
+    "webpack": "5.72.0",
+    "webpack-cli": "4.9.2"
   },
   "engines": {
     "node": ">=16.13.1",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.10"
+  "version": "0.0.14"
 }

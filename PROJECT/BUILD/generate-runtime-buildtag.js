@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.3.4 "snowpack" -1dnunoEQ8aUgOdFVoKGeQ a7a18705bd1f078c58c612c98d87f003e965b4ff
+// Encapsule holistic v0.3.5 "snowmelt" q5C8_UzLS4WT2TVWrNsd7Q 3dc5903a7448efde3cec0a50edad661456993836
 //
 
 const arccore = require("@encapsule/arccore");

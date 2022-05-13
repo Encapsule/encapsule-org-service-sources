@@ -1,5 +1,5 @@
 // THIS FILE IS CODE-GENERATED
-// Encapsule holistic v0.3.4 "snowpack" -1dnunoEQ8aUgOdFVoKGeQ a7a18705bd1f078c58c612c98d87f003e965b4ff
+// Encapsule holistic v0.3.5 "snowmelt" q5C8_UzLS4WT2TVWrNsd7Q 3dc5903a7448efde3cec0a50edad661456993836
 //
 // webpack.config.app.client.js
 //
@@ -27,7 +27,8 @@ module.exports = {
     target: "web",
     output: {
         path: outputPath,
-        filename: 'html5-service-runtime-bundle.js'
+        filename: 'html5-service-runtime-bundle.js',
+        hashFunction: "sha256" // https://stackoverflow.com/questions/69394632/webpack-build-failing-with-err-ossl-evp-unsupported/69394785#69394785
     },
     module: {
         rules: [

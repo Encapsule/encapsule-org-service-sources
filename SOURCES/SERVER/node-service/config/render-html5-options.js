@@ -4,7 +4,7 @@
 var appBuild = require("../../../app-build");
 
 module.exports = {
-  documentPrologueComments: "  <!-- App-specific prologue comment: Replace this comment with comments specific to your application in the SOURCES/SERVER/node-service/config/render-html5-options.js module. -->\n",
-  documentHeadSectionLinksMeta: "    <!-- App-specific document head section links & metadata: Replace this comment with your application-specific HTML5 resource declarations in the SOURCES/SERVER/noder-service/render-html5-options.js module. -->\n",
-  documentEpilogueComments: "    <!-- App specific epilogue comment: Replace this comment with comments specific to your application in the SOURCES/SERVER/node-service/render-html5-options.js module. -->\n"
+    documentPrologueComments: "  <!-- This HTML5 document was synthesized by one of our Node.js backend servers.... -->\n",
+    documentHeadSectionLinksMeta: "    <!-- ^--- Resources common to all holistic applications. v--- Resources specific to Encapsule.io application. -->\n",
+    documentEpilogueComments: "    <!-- Live long and prosper. -->\n"
 };

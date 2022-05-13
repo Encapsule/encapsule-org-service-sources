@@ -2,8 +2,8 @@
     "author": "Encapsule",
     "name": "encapsule-project",
     "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
-    "version": "0.0.10",
-    "codename": "setup10",
+    "version": "0.0.14",
+    "codename": "setup14",
     "dependencies": {
         "common": {
             "got": "11.8.2"
