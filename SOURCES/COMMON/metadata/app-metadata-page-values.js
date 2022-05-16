@@ -5,10 +5,10 @@ var appBuildManifest = require("../../app-build");
 
 module.exports = {
   "/": {
-    title: appBuildManifest.app.name,
-    description: appBuildManifest.app.description,
-    name: appBuildManifest.app.name,
-    tooltip: "".concat(appBuildManifest.app.name, "...")
+      title: "Encapsule Project",
+      description: "Welcome to the Encapsule Project homepage.",
+      name: "Encapsule.org",
+      tooltip: "".concat("Go home...")
   },
   "/login-oauth2": {
     title: "${appBuildManifest.app.name} Login",

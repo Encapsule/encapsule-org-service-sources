@@ -2,8 +2,8 @@
     "author": "Encapsule",
     "name": "encapsule-project",
     "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
-    "version": "0.0.15",
-    "codename": "setup15",
+    "version": "0.0.16",
+    "codename": "crystalglacier",
     "dependencies": {
         "common": {
             "got": "11.8.2"

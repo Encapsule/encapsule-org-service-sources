@@ -1,7 +1,7 @@
 {
-  "appgen": "@encapsule/holistic v0.4.1 shuksan qWz9bDhMRUuHfTWsrDRaLw ae2dc7a6190f40d8310f948aa48b7be3e1587574 2022-05-16T18:19:39.000Z",
+  "appgen": "@encapsule/holistic v0.4.2 crystalglacier 3zTF6RHoQZ6jA5KIv80QPA d1d8d11a84b04584fd9dd174c6440cc6be1f9a71 2022-05-16T20:59:36.000Z",
   "author": "Encapsule",
-  "codename": "setup15",
+  "codename": "crystalglacier",
   "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
   "devDependencies": {
     "@babel/cli": "7.14.5",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.15"
+  "version": "0.0.16"
 }

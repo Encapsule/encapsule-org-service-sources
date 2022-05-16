@@ -4,7 +4,7 @@
 var appBuildManifest = require("../../app-build");
 
 module.exports = {
-  name: appBuildManifest.app.name,
-  description: appBuildManifest.app.description,
-  build: appBuildManifest
+    name: "Encapsule.org",
+    description: "Encapsule Project open source project homepage.",
+    build: appBuildManifest
 };
