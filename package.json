@@ -1,7 +1,7 @@
 {
-  "appgen": "@encapsule/holistic v0.3.5 snowmelt q5C8_UzLS4WT2TVWrNsd7Q 3dc5903a7448efde3cec0a50edad661456993836 2022-05-13T16:30:44.000Z",
+  "appgen": "@encapsule/holistic v0.4.1 shuksan qWz9bDhMRUuHfTWsrDRaLw ae2dc7a6190f40d8310f948aa48b7be3e1587574 2022-05-16T18:19:39.000Z",
   "author": "Encapsule",
-  "codename": "setup14",
+  "codename": "setup15",
   "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
   "devDependencies": {
     "@babel/cli": "7.14.5",
@@ -42,8 +42,8 @@
     "pg": "8.6.0",
     "process": "^0.11.10",
     "query-string": "^6.2.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
     "react-markdown": "^2.5.0",
     "request": "^2.88.0",
     "stream-browserify": "^3.0.0",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.14"
+  "version": "0.0.15"
 }
