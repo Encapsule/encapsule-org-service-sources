@@ -5,8 +5,8 @@ var appBuildManifest = require("../../app-build");
 
 module.exports = {
   "/": {
-      title: "Encapsule Project",
-      description: "Welcome to the Encapsule Project homepage.",
+      title: "Encapsule.org",
+      description: "Welcome to Encapsule.org - the new Encapsule Project homepage application based on vLastest @encapsule/holistic.",
       name: "Encapsule.org",
       tooltip: "".concat("Go home...")
   },
