@@ -58,7 +58,7 @@
   },
   "license": "AGPL-3.0-or-later",
   "main": "index.js",
-  "name": "encapsule-project",
+  "name": "encapsule-org",
   "scripts": {
     "build": "make application",
     "clean": "make clean",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.17"
+  "version": "0.0.18"
 }

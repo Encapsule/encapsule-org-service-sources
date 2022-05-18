@@ -43,7 +43,7 @@ DIR_BUILD_PHASE2=$(DIR_BUILD)/webpack-phase2
 DIR_BUILD_PHASE3=$(DIR_BUILD)/runtime-phase3
 
 DIR_DISTS=$(DIR_ROOT)/DISTS
-DIR_DIST_APP_SERVICE=$(DIR_DISTS)/encapsule-project-service-deploy
+DIR_DIST_APP_SERVICE=$(DIR_DISTS)/encapsule-org-service-deploy
 
 .PHONY: default
 default:
