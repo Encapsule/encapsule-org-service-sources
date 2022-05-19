@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.18"
+  "version": "0.0.19"
 }

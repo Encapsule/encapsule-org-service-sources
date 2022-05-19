@@ -39,7 +39,25 @@
                 super(props_);
                 console.log("EncapsuleProjectProjectPage::constructor");
                 this.displayName="EncapsuleProjectPage";
+                this.state = { sectionMap: {} };
+                this.renderSectionJSON = this.renderSectionJSON.bind(this);
             }
+
+            renderSectionJSON(sectionName_, keyString_, deserializedData_) {
+
+                const self = this;
+                const toggleSectionJSON = function() {
+                    const state = self.state;
+                    state.sectionMap[sectionName_] = state.sectionMap[sectionName_]?false:true;
+                    self.setState(state);
+                };
+
+                if (this.state.sectionMap[sectionName_]) {
+                    return (<div key={keyString_} onClick={toggleSectionJSON}><pre>{`- Click to hide ${sectionName_} JSON...\n\n ${JSON.stringify(deserializedData_, undefined, 4)}`}</pre></div>);
+                    }
+                return (<div key={keyString_} onClick={toggleSectionJSON}><pre>+ Click to show {sectionName_} JSON...</pre></div>);
+            }
+
 
             render() {
 
@@ -73,33 +91,35 @@
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devArtifacts</h2>);
                 content.push(<p key={makeKey()}>A list of all plug-in @encapsule/holarchy model artifact types available registered for use in this @encapsule/holarchy.CellProcessor instance.</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devArtifacts, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devArtifacts", makeKey(), holisticHTML5Service.devArtifacts));
+
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devCells</h2>);
                 content.push(<p key={makeKey()}>A list of currently-activated cell processes managed by this @encapsule/holarchy.CellProcessor instance.</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devCells, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devCells", makeKey(), holisticHTML5Service.devCells));
+
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devData</h2>);
                 content.push(<p key={makeKey()}>{'A JSON serialization of the current state of the @encapsule/holarchy.CellProcessor instance\'s contained ObservableCellData store.'}</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devData, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devData", makeKey(), holisticHTML5Service.devData));
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devInfo</h2>);
                 content.push(<p key={makeKey()}>A JSON serialization of high-level information about this @encapsule/holarchy.CellProcessor instance.</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devInfo, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devInfo", makeKey(), holisticHTML5Service.devInfo));
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devLastEval</h2>);
                 content.push(<p key={makeKey()}>{'A JSON serialization of the @encapsule/holarchy.CellProcessor instance\'s last cellplane evaluation telemetry structure.'}</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devLastEval, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devLastEval", makeKey(), holisticHTML5Service.devLastEval));
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devProcesses</h2>);
                 content.push(<p key={makeKey()}>{'This is a JSON serialization of the @encapsule/holarchy.CellProcessor instance\'s currently-activated owned and shared cell process graphs.'}</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devProcesses, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devProcesses", makeKey(), holisticHTML5Service.devProcesses));
 
                 content.push(<h2 key={makeKey()}>window.holisticHTML5Service.devSpec</h2>);
                 content.push(<p key={makeKey()}>{'This is a JSON serialization of the @encapsule/holarchy.CellProcessor instance\'s contained ObservableCellData store.'}</p>);
-                content.push(<pre key={makeKey()}>{JSON.stringify(holisticHTML5Service.devSpec, undefined, 4)}</pre>);
+                content.push(this.renderSectionJSON("devSpec", makeKey(), holisticHTML5Service.devSpec));
 
-                return (<div style={{ margin: "0px", padding: "1em" }}>{content}</div>);
+                return (<div>{content}</div>);
 
             } // render
 

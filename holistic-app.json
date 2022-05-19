@@ -2,7 +2,7 @@
     "author": "Encapsule",
     "name": "encapsule-org",
     "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "codename": "corkscomb",
     "dependencies": {
         "common": {
