@@ -2,8 +2,8 @@
     "author": "Encapsule",
     "name": "encapsule-org",
     "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
-    "version": "0.0.22",
-    "codename": "corkscomb-test",
+    "version": "0.0.23",
+    "codename": "colfaxpeak-test",
     "dependencies": {
         "common": {
             "got": "11.8.2"
