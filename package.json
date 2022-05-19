@@ -1,7 +1,7 @@
 {
   "appgen": "@encapsule/holistic v0.4.3 corkscomb WfHhH3h_QiShac_2xxwWUQ 324e693028c10d256465eb3e525335b09857fa66 2022-05-19T18:01:09.000Z",
   "author": "Encapsule",
-  "codename": "corkscomb",
+  "codename": "corkscomb-test",
   "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
   "devDependencies": {
     "@babel/cli": "7.14.5",
