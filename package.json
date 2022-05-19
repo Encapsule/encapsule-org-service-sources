@@ -1,5 +1,5 @@
 {
-  "appgen": "@encapsule/holistic v0.4.3 corkscomb 9CoRstn3Sda_Daa8krHsxA 324e693028c10d256465eb3e525335b09857fa66 2022-05-18T20:26:57.000Z",
+  "appgen": "@encapsule/holistic v0.4.3 corkscomb WfHhH3h_QiShac_2xxwWUQ 324e693028c10d256465eb3e525335b09857fa66 2022-05-19T18:01:09.000Z",
   "author": "Encapsule",
   "codename": "corkscomb",
   "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
@@ -70,5 +70,5 @@
     "server": "npm run build && npm start",
     "start": "cd ./BUILD/runtime-phase3 && node ./SERVER/nodejs-service-runtime.js"
   },
-  "version": "0.0.21"
+  "version": "0.0.22"
 }
