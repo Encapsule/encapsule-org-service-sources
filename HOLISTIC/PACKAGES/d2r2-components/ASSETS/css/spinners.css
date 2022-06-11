@@ -6,8 +6,8 @@
 .spinner {
     width: 70px;
     height: 70px;
-    border: 8px solid rgba(0,0,0,0.8);
-    border-top-color: rgba(0,0,0,0.9) ;
+    border: 8px solid lightblue;
+    border-top-color: blue ;
     border-radius: 50%;
     animation: spin 2s linear infinite;
 }
@@ -22,8 +22,8 @@
     width: 70px;
     height: 70px;
     border: 8px solid transparent;
-    border-top-color: rgba(0,0,0,0.9);
-    border-bottom-color: rgba(0,0,0,0.9);
+    border-top-color: blue;
+    border-bottom-color: blue;
     border-radius: 50%;
     animation: spin 1.5s linear infinite;  
 }
@@ -38,7 +38,7 @@
 .spinner-fast {
     width: 70px;
     height: 70px;
-    border-top: 5px solid rgba(0,0,0,0.9);
+    border-top: 5px solid blue;
     border-right: 5px solid transparent;
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -55,7 +55,7 @@
     width: 70px;
     height: 70px;
     border: 5px solid transparent;
-    border-top-color: rgba(0,0,0,0.9) ;
+    border-top-color: blue ;
     border-radius: 50%;
     animation: spin 2s linear infinite;
 }
@@ -63,7 +63,7 @@
 .spinner-triple::before {
     content: "";
     border: 5px solid transparent;
-    border-top-color: rgba(0,0,0,0.7);
+    border-top-color: lightskyblue ;
     border-radius: 50%;
     position: absolute;
     top: 5px;
@@ -76,7 +76,7 @@
 .spinner-triple::after {
     content: "";
     border: 5px solid transparent;
-    border-top-color: rgba(0,0,0,0.8);
+    border-top-color: lightblue;
     border-radius: 50%;
     position: absolute;
     top: 15px;
