@@ -4,7 +4,7 @@
 var appBuild = require("../../../app-build");
 
 module.exports = {
-    documentPrologueComments: "  <!-- This HTML5 document was synthesized by a HolisticNodeService cell process. -->\n",
+    documentPrologueComments: "  <!-- This HTML5 document was synthesized by a HolisticNodeService cell process runing in a Node.js instance on Linux. -->\n",
     documentEpilogueComments: "    <!-- Live long and prosper. -->\n",
     documentHeadSectionLinksMeta: `
     <!-- Encapsule.org specific resource includes -->

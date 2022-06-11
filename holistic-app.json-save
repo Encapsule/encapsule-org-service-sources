@@ -1,0 +1,17 @@
+{
+    "author": "Encapsule",
+    "name": "encapsule-org",
+    "description": "Encapsule Project documentation and experiments website based on vLatest @encapsule/holistic that is deployed on Digital Ocean at https://encapsule.io.",
+    "version": "0.0.24",
+    "codename": "colfaxpeak-test1",
+    "dependencies": {
+        "common": {
+            "got": "11.8.2"
+        },
+        "buildtime": {},
+        "runtime": {}
+    },
+    "scripts": {
+        "buildtime": {}
+    }
+}

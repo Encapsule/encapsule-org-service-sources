@@ -11,9 +11,9 @@ _Encapsule Project is a quest to define a universal protocol for domain-specific
 # ![](ASSETS/encapsule-holistic-32x32.png)&nbsp;@encapsule/holism
 
 ```
-Package: @encapsule/holism v0.4.4-colfaxpeak build ID "q6UGbcD4SKiQ5TPGBvk_eQ"
+Package: @encapsule/holism v0.4.4-colfaxpeak build ID "oWtaWcpyTU-dlBarQx9RaA"
 Sources: @encapsule/holodev#62ac0c7374f9ed807a74622f7488322f038d851d
-Created: 2022-05-19T20:28:16.000Z // License: MIT
+Created: 2022-06-11T19:25:14.000Z // License: MIT
 Purpose: library // Environment: Node.js
 ```
 

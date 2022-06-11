@@ -19,7 +19,7 @@
             cmasScope: cmasEncapsuleProject,
             cellModelLabel: "EncapsuleProjectPage",
             specializationData: {
-                description: "This display layer cell model specialized for the top-level page.",
+                description: "This display layer cell model is specialized for the top-level page.",
                 displayElement: {
                     displayLayoutSpec: {
                         ____types: "jsObject",
